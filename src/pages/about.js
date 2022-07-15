@@ -1,6 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
 import "./about.css"
+import Awdtimeline from "./timeline/awdtimeline";
+import Edutimeline from "./timeline/edutimeline";
 
 function AboutPage() {
   return (
@@ -33,11 +35,27 @@ function AboutPage() {
 
                     <div className="stackContainer">
                          <div className="stackTitle">Stack</div>
-                    
+                         <div className="stackGroup">
+                    <img src="https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=JUnit5&logoColor=white"/>
+                    <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"/>
+                    <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+                    <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+                    <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+                    <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
+                    <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
+                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+                         </div>
                     </div>
 
-                    <div className="aboutMeEdu">Education</div>
-                    <div className="aboutMeAwd">Award</div>
+                    <div className="aboutMeEdu">
+                         <div className="aboutMeEduTitle">Education</div>
+                         <Edutimeline></Edutimeline>
+                    </div>
+
+                    <div className="aboutMeAwd">
+                         <div className="aboutMeAwdTitle">Award</div>
+                         <Awdtimeline></Awdtimeline>
+                    </div>
                </div>
           </Layout>
        </>

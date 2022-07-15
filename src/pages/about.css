@@ -12,7 +12,7 @@
      padding-bottom: 30px;
 }
 
-/*About Me Info css*/
+/*------------------About Me Info css*/
 .aboutMeInfo{
      width: 50%;
 }
@@ -32,22 +32,42 @@
      color : #36D1DC;
 }
 
-/*About Me Stack css*/
+/*------------------About Me Stack css*/
 .stackContainer{
-     padding-top: 30px;
+     margin-top: 30px;
+     
      width: 100%;
 }
 
 .stackTitle{
+     margin-bottom : 10px;
      font-weight: bold;
      font-size: 25px;
 }
 
-/*About Me Education css*/
+.stackGroup > img{
+     margin : 2px;
+}
+
+/*------------------About Me Education css*/
 .aboutMeEdu{
+     padding-top: 30px;
      width : 50%;
 }
-/*About Me Award css*/
+
+.aboutMeEduTitle{
+     font-weight: bold;
+     font-size: 25px;
+}
+
+
+/*---------------------About Me Award css*/
 .aboutMeAwd{
+     padding-top: 30px;
      width : 50%;
+}
+
+.aboutMeAwdTitle{
+     font-weight: bold;
+     font-size: 25px;
 }
