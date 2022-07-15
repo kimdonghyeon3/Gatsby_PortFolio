@@ -1,0 +1,16 @@
+.indexContainer{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: center;
+     height: 100%;
+}
+.indexMain{
+     font-size: 50px;
+     font-weight: bold;
+     padding-bottom: 20px;
+}
+
+.indexSub{
+     font-size: 50px;
+}

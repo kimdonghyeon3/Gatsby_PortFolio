@@ -1,10 +1,46 @@
+
+.nav_container{
+  display:flex;
+  text-align: center;
+  justify-content: center;
+
+}
+
 .navLinks {
   list-style: none;
   padding-left: 0;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border : 1px solid #3ec0de;
+  padding : 10px 10px;
+  border-radius: 20px;
+  gap : 20px;
+  background-color: white;
+  box-shadow: 0 5px 18px -7px rgba(0,0,0,1);
 }
 
+.hoverText{
+  visibility: hidden;
+  position : absolute;
+  right: 0;
+  top:10%;
+  font-weight: bold;
+  background-color: #3ec0de;
+  padding : 7px 20px;
+  border-radius : 20px 0 0 20px;
+  white-space: nowrap;
+  text-align: center;
+  transition: all 0.3s 0.1s;
+}
+.navLinkItem:hover > .hoverText{
+  visibility: visible;
+  right: 127%;
+}
 .navLinkItem {
-  padding-right: 2rem;
+
+  position : relative;
 }
 
 .navLinkText {

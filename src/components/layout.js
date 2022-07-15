@@ -1,18 +1,15 @@
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import React from "react";
 import Profile from "./profile.js"
 import Nav from "./nav.js"
-
 import {
   container,
   heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
   navContainer,
   mainContainer,
   mainProfile,
   contentContainer,
+  contentContainerSub,
 } from "./layout.module.css";
 
 function Layout({ pageTitle, children }) {
@@ -33,29 +30,23 @@ function Layout({ pageTitle, children }) {
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
       
-      
       <main className={mainContainer}>
 
         <div className={mainProfile}>
           <Profile></Profile>
         </div>
         {/* <header className={siteTitle}>{data.site.siteMetadata.title}</header> */}
-        <content className={contentContainer}>
-          ji
-          <h1 className={heading}>{pageTitle}</h1>
+        <div className={contentContainer}>
+          <div className={contentContainerSub}>
           {children}
-        </content>
+          </div>
+        </div>
 
       <nav className={navContainer}>
-        
         <Nav></Nav>
-
       </nav>
 
-
       </main>
-
-
     </div>
   );
 }
