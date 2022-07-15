@@ -1,0 +1,12 @@
+.navLinks {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navLinkItem {
+  padding-right: 2rem;
+}
+
+.navLinkText {
+  color: black;
+}

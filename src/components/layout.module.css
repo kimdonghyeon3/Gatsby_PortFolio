@@ -1,4 +1,6 @@
-
+html, body{
+  margin : 0;
+}
 .container {
   margin: auto;
   font-family: sans-serif;
@@ -7,6 +9,7 @@
   justify-content: center;
   width:100%;
   height: 100%;
+  background-color: #e2e8eb;
 }
 
 .heading {
@@ -18,7 +21,7 @@
   align-items:center;
   flex-direction: row;
   justify-content: center;
-  border:3px solid pink;
+  /* border:3px solid pink; */
   width:100%;
   height: 100%;
 }
@@ -26,10 +29,11 @@
 .mainProfile{
   /* border : 3px solid black; */
   height: 80%;
-  width: 19%;
+  width : 370px;
+  /* width: 22%; */
 }
 .contentContainer{
-  width: 45%;
+  width: 50%;
   border : 3px solid red;
   height: 80%;
 }
@@ -37,7 +41,8 @@
 .navContainer{
   display:flex;
   flex-direction: column;
-  width: 8%;
+  width : 130px;
+  /* width: 8%; */
   height: 80%;
   border : 3px solid blue;
 }

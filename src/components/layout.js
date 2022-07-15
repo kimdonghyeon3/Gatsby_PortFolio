@@ -1,7 +1,7 @@
 import { Link, useStaticQuery, graphql } from "gatsby";
 import React from "react";
-
 import Profile from "./profile.js"
+import Nav from "./nav.js"
 
 import {
   container,
@@ -48,23 +48,8 @@ function Layout({ pageTitle, children }) {
 
       <nav className={navContainer}>
         
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link className={navLinkText} to="/">
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link className={navLinkText} to="/about">
-              About
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link className={navLinkText} to="/blog">
-              Blog
-            </Link>
-          </li>
-        </ul>
+        <Nav></Nav>
+
       </nav>
 
 
