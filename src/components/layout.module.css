@@ -1,3 +1,4 @@
+
 html, body{
   margin : 0;
 }
@@ -32,14 +33,16 @@ html, body{
   width : 370px;
   /* width: 22%; */
 }
+
 .contentContainer{
   width: 60%;
   height: 80%;
   border-radius: 0 3rem 3rem 0;
-  background: #36D1DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #36D1DC;
+  background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);
+  background: linear-gradient(to bottom, #5B86E5, #36D1DC);
 }
+
 .contentContainerSub{
   overflow : auto;
   width: 100%;
@@ -51,20 +54,19 @@ html, body{
 
 /*스크롤 바 커스텀*/
 .contentContainerSub::-webkit-scrollbar {
-    width: 10px;  /* 스크롤바의 너비 */
-        margin-right : 20px;
-    padding-right : 20px;
+  width: 10px;  /* 스크롤바의 너비 */
+  margin-right : 20px;
+  padding-right : 20px;
 }
 
 .contentContainerSub::-webkit-scrollbar-thumb {
-    max-height: 100px; /* 스크롤바의 길이 */
-    background: #36D1DC; /* 스크롤바의 색상 */
-
-    border-radius: 10px;
+  max-height: 100px; /* 스크롤바의 길이 */
+  background: #36D1DC; /* 스크롤바의 색상 */
+  border-radius: 10px;
 }
 
 .contentContainerSub::-webkit-scrollbar-track {
-    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+  background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
 }
 
 .navContainer{

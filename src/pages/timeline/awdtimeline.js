@@ -5,21 +5,21 @@ const Awdtimeline = () => {
   return (
     <>
 <div id="eduTimeLineContent">
-<ul class="timeline">
-  <li class="timeline-event">
-    <label class="timeline-event-icon"></label>
-    <div class="timeline-event-copy">
-      <div class="timeline-event-thumbnail">2021</div>
-      <div>Echo Project - 우수상</div>
-      <div>AR Navigation</div>
+<ul className="timeline">
+  <li className="timeline-event">
+    <label className="timeline-event-icon"></label>
+    <div className="timeline-event-copy">
+      <div className="timeline-event-thumbnail">2021</div>
+      <div className="timelineTitle">우수상</div>
+      <div className="timelineDes">Echo Project - AR Navigation</div>
     </div>
   </li>
-  <li class="timeline-event">
-    <label class="timeline-event-icon"></label>
-    <div class="timeline-event-copy">
-      <div class="timeline-event-thumbnail">2020</div>
-      <div>창업 무슨 대회 였는디 - 장려</div>
-      <div>창업 내용 설명회 같은거</div>
+  <li className="timeline-event">
+    <label className="timeline-event-icon"></label>
+    <div className="timeline-event-copy">
+      <div className="timeline-event-thumbnail">2020</div>
+      <div className="timelineTitle">장려</div>
+      <div className="timelineDes">창업 아이디어 경진 대회</div>
     </div>
   </li>
 </ul>  

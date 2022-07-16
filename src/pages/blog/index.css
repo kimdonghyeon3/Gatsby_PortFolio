@@ -1,0 +1,27 @@
+.projectContainer{
+     padding : 60px 60px;
+     overflow: auto;
+}
+
+.projectTitle{
+     width:100%;
+     font-size: 40px;
+     font-weight: bold;
+     padding-bottom: 30px;
+}
+
+.projectItem{
+     margin-bottom : 20px;
+     padding : 7px 5px;
+     opacity: 0.8;
+}
+.projectItem:hover {
+     background-color: #f2f2f2;
+}
+
+.projectItemTitle{
+     text-decoration: none;
+     font-size : 20px;
+     font-weight: bold;
+     color : black;
+}

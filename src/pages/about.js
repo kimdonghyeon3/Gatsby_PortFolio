@@ -19,7 +19,7 @@ function AboutPage() {
                          </div>
                          <div className="infoItems">
                               <div className="infoItemTitle">Age</div>
-                              <div className="infoItemDes"v> 25 </div>
+                              <div className="infoItemDes"> 25 </div>
                          </div>
                          <div className="infoItems">
                               <div className="infoItemTitle">Email</div>

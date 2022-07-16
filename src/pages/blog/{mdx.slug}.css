@@ -1,0 +1,62 @@
+.postContainer{
+     padding : 60px 60px;
+     overflow: auto;
+}
+
+.postTitle{
+     font-size: 30px;
+     font-weight: bold;
+     margin-bottom: 50px;
+}
+
+.postClose{
+     position:absolute;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 30px;
+     left:82%;
+     top : 13%;
+     padding : 5px 20px;
+}
+
+.postClose:hover {
+     background-color: #f2f2f2;
+}
+
+.postContentBox{
+     display : flex;
+}
+
+.postContentImg{
+     /* background-color: lightblue; */
+     width: 50%;
+     text-align: center;
+     padding : 8px 30px 8px 8px;
+}
+
+.postContentImg > img{
+     padding-bottom: 20px;
+     width: 100%;
+}
+
+.postContentDes{
+     width : 50%;
+     background-color: #f2f2f2;
+     padding : 10px 20px;
+     border-radius: 15px;
+}
+
+.postInfo{
+     font-size: 14px;
+     font-weight: bold;
+     margin-bottom: 6px;
+}
+
+.postInfo > svg{
+     margin-right: 10px;
+}
+
+.postInfo > a{
+     text-decoration: none;
+     color : blue;
+}
