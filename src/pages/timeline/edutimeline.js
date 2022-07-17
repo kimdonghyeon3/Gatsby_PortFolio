@@ -1,5 +1,5 @@
 import React from "react";
-import "./edutimeline.css"
+import "./timeline.css"
 
 const Edutimeline = () => {
   return (
@@ -7,7 +7,7 @@ const Edutimeline = () => {
 <div id="eduTimeLineContent">
 <ul className="timeline">
   <li className="timeline-event">
-    <label className="timeline-event-icon"></label>
+    <div className="timeline-event-icon"></div>
     <div className="timeline-event-copy">
       <div className="timeline-event-thumbnail">2022</div>
       <div className="timelineTitle">멋쟁이 사자 처럼</div>
@@ -15,7 +15,7 @@ const Edutimeline = () => {
     </div>
   </li>
   <li className="timeline-event">
-    <label className="timeline-event-icon"></label>
+    <div className="timeline-event-icon"></div>
     <div className="timeline-event-copy">
       <div className="timeline-event-thumbnail">2022</div>
       <div className="timelineTitle">EXA</div>
@@ -23,15 +23,15 @@ const Edutimeline = () => {
     </div>
   </li>
   <li className="timeline-event">
-    <label className="timeline-event-icon"></label>
+    <div className="timeline-event-icon"></div>
     <div className="timeline-event-copy">
-      <div class="timeline-event-thumbnail">2020</div>
+      <div className="timeline-event-thumbnail">2020</div>
       <div className="timelineTitle">아두이노 </div>
       <div className="timelineDes">드론 아두이노 수료</div>
     </div>
   </li>
     <li className="timeline-event">
-    <label className="timeline-event-icon"></label>
+    <div className="timeline-event-icon"></div>
     <div className="timeline-event-copy">
       <div className="timeline-event-thumbnail">2017</div>
       <div className="timelineTitle">대학교 </div>

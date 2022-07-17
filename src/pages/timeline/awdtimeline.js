@@ -1,5 +1,5 @@
 import React from "react";
-import "./awdtimeline.css"
+import "./timeline.css"
 
 const Awdtimeline = () => {
   return (
@@ -7,7 +7,7 @@ const Awdtimeline = () => {
 <div id="eduTimeLineContent">
 <ul className="timeline">
   <li className="timeline-event">
-    <label className="timeline-event-icon"></label>
+    <div className="timeline-event-icon"></div>
     <div className="timeline-event-copy">
       <div className="timeline-event-thumbnail">2021</div>
       <div className="timelineTitle">우수상</div>
@@ -15,7 +15,7 @@ const Awdtimeline = () => {
     </div>
   </li>
   <li className="timeline-event">
-    <label className="timeline-event-icon"></label>
+    <div className="timeline-event-icon"></div>
     <div className="timeline-event-copy">
       <div className="timeline-event-thumbnail">2020</div>
       <div className="timelineTitle">장려</div>
