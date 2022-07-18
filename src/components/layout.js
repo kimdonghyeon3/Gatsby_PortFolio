@@ -16,13 +16,50 @@ function Layout({ pageTitle, children }) {
 
   
             $(document).ready(function ($) {
+                "use strict";
 
+                if ($('.pageloader').length) {
+
+                    $('.pageloader').toggleClass('is-active');
+
+                    $(window).on('load', function () {
+                        var pageloaderTimeout = setTimeout(function () {
+                            $('.pageloader').toggleClass('is-active');
+                            $('.infraloader').toggleClass('is-active')
+                            clearTimeout(pageloaderTimeout);
+                        }, 700);
+                    })
+                }
                 //Index hero animated header
                 if ($('#large-header').length) {
                     // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
                     // http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
                     // requestAnimationFrame polyfill by Erik MÃ¶ller. fixes from Paul Irish and Tino Zijdel
                     // MIT license
+                    (function () {
+                        var lastTime = 0;
+                        var vendors = ['ms', 'moz', 'webkit', 'o'];
+                        for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                            window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+                            window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame']
+                            || window[vendors[x] + 'CancelRequestAnimationFrame'];
+                        }
+
+                        if (!window.requestAnimationFrame)
+                            window.requestAnimationFrame = function (callback, element) {
+                                var currTime = new Date().getTime();
+                                var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                                var id = window.setTimeout(function () { callback(currTime + timeToCall); },
+                                                           timeToCall);
+                                lastTime = currTime + timeToCall;
+                                return id;
+                            };
+
+                        if (!window.cancelAnimationFrame)
+                            window.cancelAnimationFrame = function (id) {
+                                clearTimeout(id);
+                            };
+                    }());
 
                     (function () {
 
@@ -97,6 +134,7 @@ function Layout({ pageTitle, children }) {
                 }
 
             })
+
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -111,6 +149,8 @@ function Layout({ pageTitle, children }) {
   return (
     <div className={container}>
 {/* 배경 buble관련 */}
+  <div class="pageloader"></div>
+        <div class="infraloader is-active"></div>
         <div id="large-header" className="hero is-slanted is-relative is-gradient is-fullheight is-halfed-mobile">
           <div id="main-hero" className="hero-body">
                 <div id="main-landing-title" className="container has-text-centered">
