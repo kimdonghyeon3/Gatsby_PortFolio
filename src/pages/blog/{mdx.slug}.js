@@ -3,9 +3,13 @@ import React from "react";
 import Layout from "../../components/layout";
 import { graphql, Link } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import "./{mdx.slug}.css"
 
 const BlogPost = ({data}) => {
+
+  const image = getImage(data.mdx.frontmatter.hero_image)
+  
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <div className="postContainer">
@@ -14,8 +18,8 @@ const BlogPost = ({data}) => {
 
         <div className="postContentBox">
           <div className="postContentImg">
-              <img src={data.mdx.frontmatter.description}/>
-              이미지 넣는 자리
+              {/* <img src={data.mdx.frontmatter.description}/> */}
+              <GatsbyImage image={image} alt=""/>
           </div>
           <div className="postContentDes">
             <MDXRenderer>{data.mdx.body}</MDXRenderer>
@@ -33,6 +37,11 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY")
+        hero_image {
+          childImageSharp {
+            gatsbyImageData
+          }
+      }
       }
       body
     }

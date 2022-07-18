@@ -14,5 +14,6 @@ plugins: [
       },
     },
     "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
   ],
 };
