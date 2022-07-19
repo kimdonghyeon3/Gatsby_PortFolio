@@ -2,7 +2,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import React from "react";
 import Profile from "./profile.js"
 import Nav from "./nav.js"
-import $ from 'jquery'
 import {
   container,
   navContainer,
@@ -14,24 +13,23 @@ import {
 
 function Layout({ pageTitle, children }) {
 
-  
-            $(document).ready(function ($) {
+            document.querySelector(document).ready(function ($) {
                 "use strict";
 
-                // if ($('.pageloader').length) {
+                // if (document.querySelector('.pageloader').length) {
 
-                //     $('.pageloader').toggleClass('is-active');
+                //     document.querySelector('.pageloader').classList.toggle('is-active');
 
-                //     $(window).on('load', function () {
+                //     document.querySelector(window).addEventListener('load', function () {
                 //         var pageloaderTimeout = setTimeout(function () {
-                //             $('.pageloader').toggleClass('is-active');
-                //             $('.infraloader').toggleClass('is-active')
+                //             document.querySelector('.pageloader').classList.toggle('is-active');
+                //             document.querySelector('.infraloader').classList.toggle('is-active')
                 //             clearTimeout(pageloaderTimeout);
                 //         }, 700);
                 //     })
                 // }
                 //Index hero animated header
-                if ($('#large-header').length) {
+                if (document.querySelector('#large-header').length) {
                     // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
                     // http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
                     // requestAnimationFrame polyfill by Erik MÃ¶ller. fixes from Paul Irish and Tino Zijdel
