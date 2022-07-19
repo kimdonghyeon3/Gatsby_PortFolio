@@ -1,5 +1,5 @@
 import { useStaticQuery, graphql } from "gatsby";
-import React from "react";
+import React, { useEffect } from "react";
 import Profile from "./profile.js"
 import Nav from "./nav.js"
 import {
@@ -13,7 +13,9 @@ import {
 
 function Layout({ pageTitle, children }) {
 
-            document.querySelector(document).ready(function ($) {
+
+  useEffect(() => {
+document.querySelector(document).ready(function ($) {
                 "use strict";
 
                 // if (document.querySelector('.pageloader').length) {
@@ -132,6 +134,9 @@ function Layout({ pageTitle, children }) {
                 }
 
             })
+  },[])
+
+            
 
   const data = useStaticQuery(graphql`
     query {
