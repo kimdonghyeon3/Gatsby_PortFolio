@@ -25,8 +25,7 @@ function Profile() {
       </div>
 
       <div className="emailContect" style={{color:"white"}}>
-        <AiOutlineMail size="25" color="white"/>
-          <h4>kimdonghyeon98@gmail.com</h4>
+          kimdonghyeon98@gmail.com
       </div>
       <div className="version" style={{color:"white"}}>@ver.  2022-7-11</div>
     </div>
