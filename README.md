@@ -6,11 +6,6 @@
 
 <h3 align="center">Gatsby PortFolio</h3>
 
-<br />
-<br />
-<hr/>
-<br />
-
   <p align="center">
     Gatsby를 활용한 포트폴리오 사이트 제작
     <br />
@@ -20,6 +15,13 @@
 
   </p>
 </div>
+
+<br />
+<br />
+<hr/>
+<br />
+
+
 
 
 <p align="center">
