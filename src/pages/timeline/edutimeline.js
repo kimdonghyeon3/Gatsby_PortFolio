@@ -25,14 +25,6 @@ const Edutimeline = () => {
   <li className="timeline-event">
     <div className="timeline-event-icon"></div>
     <div className="timeline-event-copy">
-      <div className="timeline-event-thumbnail">2020</div>
-      <div className="timelineTitle">아두이노 </div>
-      <div className="timelineDes">드론 아두이노 수료</div>
-    </div>
-  </li>
-    <li className="timeline-event">
-    <div className="timeline-event-icon"></div>
-    <div className="timeline-event-copy">
       <div className="timeline-event-thumbnail">2017</div>
       <div className="timelineTitle">대학교 </div>
       <div className="timelineDes">응용컴퓨터 공학과 재학</div>
