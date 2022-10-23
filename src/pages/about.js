@@ -27,12 +27,23 @@ function AboutPage() {
                          </div>
                          <div className="infoItems">
                               <div className="infoItemTitle">GitHub</div>
-                              <div className="infoItemDes"> github.com/kimdonghyeon3 </div>
+                              <a className="infoItemDes" href="https://github.com/kimdonghyeon3"> GitHub 바로가기 </a>
+                         </div>
+                         <div className="infoItems">
+                              <div className="infoItemTitle">Blog</div>
+                              <a className="infoItemDes" href="https://infodon.tistory.com/"> Blog 바로가기 </a>
                          </div>
                     </div>
 
-                    <div className="aboutMeIntr">안녕하세요. 분석하는 개발자 김동현 입니다. 포트폴리오에는 진행해 보았던, 모든 프로젝트의
-                    정보를 담고 있습니다. 작은 프로젝트부터 큰 프로젝트까지 다양한 프로젝트를 찾아볼 수 있습니다.</div>
+                    <div className="aboutMeIntr">
+                         🤓 안녕하세요 백엔드 개발자 김동현 입니다.
+                          <br/>
+                          작은 프로젝트부터 큰 프로젝트 까지 진행해 왔던, 모든 프로젝트 정보를
+                         기록하고자 노력해 왔습니다. <br/>
+                         이 외에도 학습한 내용, 프로젝트의 상세 정보들을 Blog, Git을 활용해
+                         기록해 왔습니다.<br/>
+                         👍 다양한 기록을 편하게 살펴보세요 👍
+                    </div>
 
                     <div className="stackContainer">
                          <div className="stackTitle">Stack</div>
